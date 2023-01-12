@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="circle.css">
+    <title>circle</title>
+    <script>
+        var e;
+        function fun1(e){
+            alert("c1 circle");
+            event.stopImmediatePropagation()
+            
+        }
+        function fun2(e){
+            alert("c2 circle");
+            event.stopImmediatePropagation()
+            
+        }
+        function fun3(e){
+            alert("c3 circle");
+            event.stopImmediatePropagation()
+            
+        }
+    </script>
+</head>
+<body>
+    <div class="c1" onclick="fun1(e)">
+        <div class="c2" onclick="fun2(e)">
+            <div class="c3" onclick="fun3(e)"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

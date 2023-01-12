@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="button.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="btns" class="buttonContainer">
+        <button id="b1" class="button">1</button>
+        <button id="b2" class="button">2</button>
+        <button id="b3" class="button">3</button>
+        <br>
+        <button id="b4" class="button">4</button>
+        <button id="b5" class="button">5</button>
+        <button id="b6" class="button">6</button>
+        <br>
+        <button id="b7" class="button">7</button>
+        <button id="b8" class="button">8</button>
+        <button id="b9" class="button">9</button>
+    </div>
+    <script>
+        b5.onclick=function(){
+            var temp=b1.innerHTML;
+            b1.innerHTML=b4.innerHTML;
+            b4.innerHTML=b7.innerHTML;
+            b7.innerHTML=b8.innerHTML;
+            b8.innerHTML=b9.innerHTML;
+            b9.innerHTML=b6.innerHTML;
+            b6.innerHTML=b3.innerHTML;
+            b3.innerHTML=b2.innerHTML;
+            b2.innerHTML=temp;
+        
+        }
+    </script>
+</body>
+</html>
